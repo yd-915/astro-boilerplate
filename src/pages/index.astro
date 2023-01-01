@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Liiska." style="background: #2A2A2C">
+<Layout title="Welcome to Liiska." class="big-background">
 	<main>
 		<h1>Welcome to <span class="text-gradient">Liiska</span></h1>
 		<p class="instructions">
@@ -50,7 +50,11 @@ import Card from '../components/Card.astro';
 		max-width: 60ch;
 		background: #2A2A2C;
 	}
-
+         
+        .big-background {
+	background: #2A2A2C;	
+	
+	}
 	.text-gradient {
 		font-weight: 900;
 		background-image: var(--astro-gradient);
